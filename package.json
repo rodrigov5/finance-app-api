@@ -10,7 +10,8 @@
         "prettier-format": "npx prettier *.js --write",
         "postinstall": "npx husky",
         "commit-correct": "git/hooks/commit-msg $1",
-        "prepare": "husky"
+        "prepare": "husky",
+        "migrations": "node src/db/postgres/migrations/exec.js"
     },
     "husky": {
         "hooks": {
