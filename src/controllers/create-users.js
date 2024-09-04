@@ -41,9 +41,7 @@ export class CreateUserController {
             return created(createdUser);
         } catch (error) {
             console.log(error);
-            return serverError({
-                message: error.message,
-            });
+            return serverError();
         }
     }
 }
